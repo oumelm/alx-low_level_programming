@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - prints all the numbers in base 16
+ * main - prints hexadecimal the numbers from 0 to 16
  * Return: Always 0
  */
 
