@@ -2,8 +2,8 @@
 
 /**
  * main - prints the alphabets in lowercase
- *followed by a new line, except q and e
- *Return: Always 0
+ * followed by a new line, except q and e
+ * Return: Always 0
  */
 int main(void)
 {
