@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /*
- * main - prints hexadecimal the numbers from 0 to 16
+ * main - Entry point
+ *
+ * Description: prints numbers of base16 in lowercase
+ *
  * Return: Always 0
  */
 
