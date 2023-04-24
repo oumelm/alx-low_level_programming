@@ -2,9 +2,7 @@
 
 /**
  * main - Entry point
- *
  * Description: 'prints comb of numbers'
- *
  * Return: Always 0
  */
 int main(void)
