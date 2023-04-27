@@ -2,6 +2,7 @@
 
 /**
  * time_table - prints the 9 time tables
+ * starting with 0
  *
  * Exemple Table
  * 0, 0, 0, 0. ..
