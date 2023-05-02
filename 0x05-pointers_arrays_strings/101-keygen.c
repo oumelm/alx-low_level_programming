@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
 	int pass[100];
 	int i, sum, n;
