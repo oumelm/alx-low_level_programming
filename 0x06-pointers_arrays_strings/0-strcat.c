@@ -7,7 +7,7 @@
  * @dest: pointer to destination input
  * @src: pointer to source input
  *
- * Return: pointer to resulting string @dest
+ * Return: void
  */
 
 char *_strcat(char *dest, char *src);
@@ -20,6 +20,7 @@ char *_strcat(char *dest, char *src);
 	{
 		i++;
 	}
+	j = 0;
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j]
