@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encode into a string into 1337
+ * leet - encodes into a string into 1337
  * @c: String
  * Return: string that is encoded
  */
