@@ -2,20 +2,19 @@
 
 /**
  * string_toupper - change all the lowercase to uppercase
- * @n: pointer
+ * @str: string to return
  *
- * Return: n
+ * Return: string.
  */
-char *string_toupper(char *n)
+char *string_toupper(char *str)
 {
 	int i;
 
-	i = 0;
-	while (n[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
-		i++;
+		if (i >= 97 && str[i] <= 122)
+		{
+			str[i] = str[i] - 32;
 	}
-	return (0);
+	return (str);
 }
