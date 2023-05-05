@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_number -print numbres char
- * @n: number params
+ * print_number - print numbres chars
+ * @n: integer params
  * Return: 0
  */
 void print_number(int n)
@@ -21,5 +21,5 @@ void print_number(int n)
 	{
 		print_number(n1 / 10);
 	}
-	_putchar((n % 10) + '0');
+	_putchar((n1 % 10) + '0');
 }
