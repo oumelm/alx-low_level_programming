@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
  * main - print sum 2 numbers.
- * @argc: number of commandline arguments
+ * @argc: number of commandline arguments.
  * @argv: pointer to an array of command line arguments.
  * Return: 0-success, non-zero-fail.
  */
