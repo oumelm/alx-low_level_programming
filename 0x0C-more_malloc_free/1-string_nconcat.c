@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * string_nconcat - concatenatess two strings
+ * string_nconcat - concatenates two strings
  * @s1: pointer to first string.
  * @s2: pointer to 2nd string.
  * @n: number of bytes from n2 to concatenate.
@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	unsigned int i, j, s1_length, s2_lengt;
+	unsigned int i, j, s1_length, s2_length;
 
 	/*Check if the strings passed are null*/
 	if (s1 == NULL)
@@ -22,9 +22,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*Compute the length of the strings*/
 
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
+		;
 
 	for (s2_length = 0; s2[s2_length] != '\0'; s2_length++)
-
+		;
 	/*Memory reservation-for case 1 & 2.*/
 	str = malloc(s1_length + n + 1);
 	if (str == NULL)
