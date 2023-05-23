@@ -55,12 +55,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/* if name and owner are empty and age is less than zero return null*/
 	if (!name || age < 0 || !owner)
 		return (NULL);
-	dog = (dog_t *) malloc(sizeof(dog_t);
+	dog = (dog_t *) malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
 
 	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if ((*dog).name == NULL))
+	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
