@@ -44,7 +44,8 @@ char *_strcopy(char *dest, char *src)
  * @age: age of dog
  * @owner: dog owner
  *
- * Return: struct pointer dog NULL if function fail
+ * Return: struct pointer dog
+ *	NULL if function fail
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -54,6 +55,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	/* if name and owner are empty and age is less than zero return null*/
 	if (!name || age < 0 || !owner)
 		return (NULL);
+
 	dog = (dog_t *) malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
