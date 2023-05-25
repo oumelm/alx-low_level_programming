@@ -4,6 +4,7 @@
  * main - check the code for the School Students.
  * @argc: the number of args
  * @argv: argument vector
+ *
  * Return: Always 0.
  */
 int main(int argc, char **argv)
@@ -21,7 +22,7 @@ int main(int argc, char **argv)
 		printf("Error\n"), exit(99);
 
 	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
-		printf("Error\n"), ext(100);
+		printf("Error\n"), exit(100);
 
 	printf("%d\n", op_func(a, b));
 	return (0);
