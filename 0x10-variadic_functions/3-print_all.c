@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 /**
  * format_char - formats character
@@ -67,7 +69,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (token[j].token)
+		while (tokens[j].token)
 		{
 			if (format[i] == tokens[j].token[0])
 			{
