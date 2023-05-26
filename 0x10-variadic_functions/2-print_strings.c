@@ -4,7 +4,7 @@
  * print_strings - prints strings with separator
  * @separator: the string of separator
  * @n: the number of arguments
- * @...: the string to print
+ * @...: the strings to print
  *
  * Return: void
  */
