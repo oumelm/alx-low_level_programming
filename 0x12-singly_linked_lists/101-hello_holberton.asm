@@ -8,5 +8,5 @@ main:
 	call	printf
 
 
-setion		.data
+section		.data
 	msg db 'Hello, Holberton', 0xa, 0
