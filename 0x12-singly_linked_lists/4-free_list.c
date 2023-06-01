@@ -8,7 +8,7 @@
  */
 void free_list(list_t *head)
 {
-	lis_t *node, *next_node;
+	list_t *node, *next_node;
 
 	if (!head)
 		return;
