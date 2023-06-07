@@ -11,7 +11,7 @@
  *
  * Return: pointer to the new list
  */
-size_t print_listint_safe(const listint_t *head)
+const listint-t **_r(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t i;
