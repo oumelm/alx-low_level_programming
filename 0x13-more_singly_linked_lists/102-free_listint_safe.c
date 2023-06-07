@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * find_listint_loop_fl - finds a loop in a linked list
@@ -12,13 +13,13 @@ listint_t *find_listint_loop_fl(listint_t *head)
 	listint_t *ptr, *end;
 
 	if (head == NULL)
-		return (Null);
+		return (NULL);
 
 	for (end = head->next; end != NULL; end = end->next)
 	{
 		if (end == end->next)
 			return (end);
-		forr (ptr = head; ptr != end; ptr = ptr->next)
+		for (ptr = head; ptr != end; ptr = ptr->next)
 			if (ptr == end->next)
 				return (end->next);
 	}
