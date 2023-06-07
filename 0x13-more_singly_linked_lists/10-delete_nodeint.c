@@ -2,7 +2,7 @@
 
 /**
  * delete_nodeint_at_index - deletes node at given index
- * @head: adress of pointer to first node
+ * @head: address of pointer to first node
  * @index: index of node to delete
  *
  * Return: 1 on success, -1 on failure
