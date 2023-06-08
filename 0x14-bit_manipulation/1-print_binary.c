@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	{
 		if (n & 1L << --bit)
 		{
-			_puychar('1');
+			_putchar('1');
 			printed++;
 		}
 		else if (printed)
