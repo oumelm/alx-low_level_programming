@@ -1,10 +1,9 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads text from a file and prints it
- * @filename: name of the file to read
- * @letters: number of the bytes to read
- *
+ * read_textfile - Reads text file print to STDOUT.
+ * @filename: text file being read
+ * @letters: number of the letters to be read
  * Return: w- actual number of bytes read and printed 
  * 	0 when function fails or filename is NULL.
  */
