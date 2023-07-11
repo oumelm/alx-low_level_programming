@@ -6,7 +6,7 @@
  * @argc: number of arguments
  * @argv: a pointer point to the array of arguments
  * Return: Always 0
- */
+ **/
 
 int main(int argc, char **argv)
 {
@@ -27,13 +27,16 @@ int main(int argc, char **argv)
 
 	f0 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	error_99(f0, buffer, argv[2]);
+
 	do {
 		res0 = read(f1, buffer, BUF_SIZE);
 		if (res0 == 0)
 			break;
 		error_98(res0, buffer, argv[1]);
+
 		res1 = write(f0, buffer, res0);
 		error_99(res1, buffer, argv[2]);
+
 	} while (res1 >= BUF_SIZE);
 	res0 = close(f0);
 	error_100(res0, buffer);
