@@ -55,9 +55,26 @@ void error_98(int f0, char *buffer, char *argv)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv);
 		free(buffer);
+		exit(98);
+	}
+}
+
+/**
+ * error_99 - checks error 99
+ * @f0: value to check
+ * @buffer: the buffer
+ * @argv: argumengt
+ */
+void error_99(int f0, char *buffer, char *argv)
+{
+	if (f0 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv);
+		free(buffer);
 		exit(99);
 	}
 }
+
 /**
  * error_100 - chacks error 100
  * @f0: the value to check
