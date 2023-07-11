@@ -63,7 +63,7 @@ void error_98(int f0, char *buffer, char *argv)
  * error_99 - checks error 99
  * @f0: value to check
  * @buffer: the buffer
- * @argv: argumengt
+ * @argv: argument
  */
 void error_99(int f0, char *buffer, char *argv)
 {
@@ -76,7 +76,7 @@ void error_99(int f0, char *buffer, char *argv)
 }
 
 /**
- * error_100 - chacks error 100
+ * error_100 - checks error 100
  * @f0: the value to check
  * @buffer: the buffer
  */
