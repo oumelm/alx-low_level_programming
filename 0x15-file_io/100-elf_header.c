@@ -39,7 +39,7 @@ void check_elf(unsigned char *e_ident)
 			e_ident[index] != 'L' &&
 			e_ident[index] != 'F')
 		{
-				dprintf(STDERR_FILENO, "Error: Not an ELf file\n")
+				dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 				exit(98);
 		}
 	}
@@ -152,7 +152,7 @@ void print_osabi(unsigned char *e_ident)
 	case ELFOSABI_NETBSD:
 		printf("UNIX - NetBSD\n");
 		break;
-	 case ELFOSABI_LINUX:
+	case ELFOSABI_LINUX:
 		printf("UNIX - Linux\n");
 		break;
 	case ELFOSABI_SOLARIS:
@@ -224,7 +224,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 
 /**
  * print_entry - Prints the entry point of an ELF header.
- * @e_ident: The address of the ELF entry point.
+ * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
@@ -233,7 +233,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
-		e_entry = ((e_entry << 8) & 0xFF00FF00) | 
+		e_entry = ((e_entry << 8) & 0xFF00FF00) |
 			((e_entry >> 8) & 0xFF00FF);
 		e_entry = (e_entry << 16) | (e_entry >> 16);
 	}
@@ -275,7 +275,7 @@ void close_elf(int elf)
 int main(int__attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
-	int o,r;
+	int o, r;
 
 	o = open(argv[1], O_RDONLY);
 	if (o == -1)
