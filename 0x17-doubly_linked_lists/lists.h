@@ -2,7 +2,7 @@
 #define LISTS_H
 
 #include <stdlib.h>
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct_dlistint_s doubly linked list
